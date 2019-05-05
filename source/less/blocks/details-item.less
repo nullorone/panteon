@@ -1,0 +1,110 @@
+.details-item {
+  margin-top: 30px;
+  padding-left: 30px;
+
+  &--active {
+    .details-item__title {
+      display: block;
+    }
+
+    .details-item__img {
+      display: block;
+    }
+
+    .details-item__subtitle {
+      display: block;
+    }
+
+    .details-item__text {
+      display: block;
+    }
+
+    .details-item__link {
+      display: inline-block;
+    }
+  }
+}
+
+.details-item__heading-block {
+  display: flex;
+}
+
+.details-item__icon {
+  display: block;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &--teacup {
+    width: 30px;
+    height: 23px;
+    background-image: url("../img/icon-teacup.png");
+  }
+
+  &--helmet {
+    width: 26px;
+    height: 19px;
+    background-image: url("../img/icon-helmet.png");
+  }
+
+  &--microscope {
+    width: 22px;
+    height: 31px;
+    background-image: url("../img/icon-microscope.png");
+  }
+
+  &--camera {
+    width: 25px;
+    height: 21px;
+    background-image: url("../img/icon-camera.png");
+  }
+
+  &--flower {
+    width: 26px;
+    height: 27px;
+    background-image: url("../img/icon-leaves.png");
+  }
+}
+
+.details-item__title {
+  display: none;
+  .titleSection();
+  margin-top: 4px;
+  margin-left: 17px;
+  font-size: 20px;
+}
+
+.details-item__img {
+  display: none;
+  margin-top: 25px;
+}
+
+.details-item__subtitle {
+  display: none;
+  .subtitleSection();
+  margin-top: 32px;
+}
+
+.details-item__text {
+  display: none;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.details-item__link {
+  display: none;
+  min-width: 160px;
+  margin-top: 38px;
+  color: @color-white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 46px;
+  border-radius: 23px;
+  background-color: #e12457;
+  text-align: center;
+  text-decoration: none;
+}
