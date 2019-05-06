@@ -1,0 +1,97 @@
+.info-block {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  min-height: 175px;
+  background-color: #cccccd;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: -900px;
+    width: 1447px;
+    height: 1264px;
+    border: 5px solid #e12457;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: skew(7deg);
+  }
+}
+
+.info-block__planet {
+  position: absolute;
+  border: 5px solid #e12457;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &--earth {
+    width: 79px;
+    height: 79px;
+    bottom: 0;
+    left: -5px;
+
+    &::before {
+      content: "Earth";
+      position: absolute;
+      top: -35px;
+      left: 30px;
+      color: @color-raspberry;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+
+  &--mars {
+    width: 45px;
+    height: 45px;
+    top: 5px;
+    right: -6px;
+
+    &::before {
+      content: "Mars";
+      position: absolute;
+      top: 0;
+      left: -52px;
+      color: @color-raspberry;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+  }
+}
+
+.info-block__rocket {
+  position: absolute;
+  bottom: 50px;
+  left: 145px;
+  width: 55px;
+  height: 44px;
+  background-image: url("../img/icon-rocket.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.info-block__text-wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+}
+
+.info-block__text {
+  margin: 0;
+  margin-left: 30px;
+  color: @color-raspberry;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+
+  & > sup {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__menu-block {
+  position: relative;
+  width: 47px;
+  height: 2px;
+  margin-top: 19px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid @color-white;
+  border-radius: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 30px;
+    border-top: 2px solid @color-white;
+    border-radius: 2px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 23px;
+    border-top: 2px solid @color-white;
+    border-radius: 2px;
+  }
+}
+

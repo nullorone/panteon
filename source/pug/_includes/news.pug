@@ -1,0 +1,10 @@
+section.news
+  h2.news__title
+    | Будь в курсе новостей
+  form.news__form.news-form(action="https://echo.htmlacademy.ru", method="POST")
+    input.news-form__input(type="text", id="user-name", name="user-name", placeholder="Имя")
+    label.news-form__label.visually-hidden(for="user-name")
+    input.news-form__input(type="email", id="user-email", name="user-email", placeholder="E-mail")
+    label.news-form__label.visually-hidden(for="user-email")
+    button.news-form__btn.btn-white(type="submit")
+      | Подписаться
