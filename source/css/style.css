@@ -695,6 +695,96 @@ body {
 .about__text:last-child {
   margin-top: 40px;
 }
+.info-block {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  min-height: 175px;
+  background-color: #cccccd;
+}
+.info-block::before {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: -900px;
+  width: 1447px;
+  height: 1264px;
+  border: 5px solid #e12457;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-transform: skew(7deg);
+          transform: skew(7deg);
+}
+.info-block__planet {
+  position: absolute;
+  border: 5px solid #e12457;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.info-block__planet--earth {
+  width: 79px;
+  height: 79px;
+  bottom: 0;
+  left: -5px;
+}
+.info-block__planet--earth::before {
+  content: "Earth";
+  position: absolute;
+  top: -35px;
+  left: 30px;
+  color: #e12457;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.info-block__planet--mars {
+  width: 45px;
+  height: 45px;
+  top: 5px;
+  right: -6px;
+}
+.info-block__planet--mars::before {
+  content: "Mars";
+  position: absolute;
+  top: 0;
+  left: -52px;
+  color: #e12457;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.info-block__rocket {
+  position: absolute;
+  bottom: 50px;
+  left: 145px;
+  width: 55px;
+  height: 44px;
+  background-image: url("../img/icon-rocket.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.info-block__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+}
+.info-block__text {
+  margin: 0;
+  margin-left: 30px;
+  color: #e12457;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.info-block__text > sup {
+  font-size: 16px;
+}
 .author {
   padding-top: 30px;
   padding-bottom: 193px;
@@ -859,7 +949,7 @@ body {
 }
 .warnings__img-wrapper {
   margin-top: 54px;
-  width: 291px;
+  width: 290px;
 }
 .warnings__list {
   margin: 0;
@@ -940,8 +1030,30 @@ body {
   list-style: none;
 }
 .details-item {
-  margin-top: 30px;
+  position: relative;
+  padding-top: 30px;
   padding-left: 30px;
+  background-image: linear-gradient(to right, transparent 0%, transparent 8px, #e12457 8px, #e12457 10px, transparent 10px, transparent 100%);
+}
+.details-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border: 2px solid #e12457;
+  border-radius: 50%;
+}
+.details-item--active {
+  margin-top: 30px;
+  padding-top: 0;
+}
+.details-item--active::before {
+  top: 0;
+  bottom: initial;
+  background-color: #e12457;
 }
 .details-item--active .details-item__title {
   display: block;
@@ -1127,6 +1239,7 @@ body {
 .news-form__btn {
   min-width: 255px;
   margin-top: 55px;
+  border: none;
 }
 .footer {
   min-width: 320px;
