@@ -1,30 +1,40 @@
 .about {
-  padding-top: 48px;
+  padding-top: 43px;
   .sideOffset();
 }
 
 .about__title {
   .titleSection();
+  line-height: 42px;
 }
 
 .about__subtitle {
   .subtitleSection();
-  margin-top: 37px;
+  margin-top: 41px;
+  letter-spacing: 0.5px;
 
   &:nth-child(2) {
-    margin-top: 50px;
+    margin-top: 24px;
   }
 }
 
 .about__text {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 13px;
   color: @color-gray;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
 
-  &:last-child {
-    margin-top: 40px;
+  &--first {
+    margin-top: 23px;
+  }
+
+  &:nth-of-type(5) {
+    margin-top: 18px;
+  }
+
+  &:last-of-type {
+    margin-top: 24px;
   }
 }

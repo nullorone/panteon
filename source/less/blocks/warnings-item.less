@@ -1,12 +1,16 @@
 .warnings-item {
   position: relative;
-  margin-top: 50px;
+  margin-top: 45px;
+
+  &:first-of-type {
+    margin-top: 41px;
+  }
 
   &::before {
     content: "";
     position: absolute;
     top: 3px;
-    right: 0;
+    right: 4px;
     width: 10px;
     height: 10px;
     border-right: 2px solid fade(@color-white, 40);
@@ -16,7 +20,7 @@
 
   &--active {
     &::before {
-      top: 5px;
+      top: 9px;
       border-color: @color-white;
       transform: rotate(-135deg);
     }
@@ -38,18 +42,19 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 1.7px;
 }
 
 .warnings-item__text {
   display: none;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 12px;
   color: @color-white;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
 
   &:first-of-type {
-    margin-top: 45px;
+    margin-top: 32px;
   }
 }
