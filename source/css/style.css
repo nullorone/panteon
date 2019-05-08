@@ -929,6 +929,7 @@ body {
 .btn-white {
   display: block;
   min-width: 288px;
+  max-width: 290px;
   color: #c2529a;
   font-size: 18px;
   font-weight: 700;
@@ -1270,6 +1271,7 @@ body {
 }
 .footer {
   min-width: 320px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 50px;
