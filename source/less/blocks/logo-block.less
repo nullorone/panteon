@@ -5,11 +5,21 @@
 .logo-block__text {
   margin-left: 10px;
 
+  @media (min-width: @tablet-width) {
+    margin-left: 13px;
+  }
+
   & span {
     display: block;
     font-size: 13px;
     font-weight: 100;
     line-height: 13px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+    }
   }
 }
 
@@ -19,4 +29,10 @@
   font-size: 17px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 6px;
+    font-size: 21px;
+    line-height: 21px;
+  }
 }

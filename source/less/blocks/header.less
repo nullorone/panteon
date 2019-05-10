@@ -1,15 +1,24 @@
 .header {
   min-width: @mobile-width;
   min-height: 579px;
-  padding-top: 20px;
+  padding-top: 24px;
   .sideOffset();
   color: @color-white;
   background: #821462 url("../img/bg-header-320.jpg") no-repeat center center;
   background-size: 100%;
+
+  @media (min-width: @tablet-width) {
+    min-height: 940px;
+    background-image: url("../img/bg-header-750.jpg");
+  }
 }
 
 .header__heading-block {
   margin-top: 83px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 187px;
+  }
 }
 
 .header__video-block {
@@ -29,4 +38,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 75px;
+  }
 }

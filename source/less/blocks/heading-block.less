@@ -6,12 +6,25 @@
   letter-spacing: 0.71px;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.48px;
+  }
+
   & span {
     margin-right: 10px;
     font-size: 13px;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 0.37px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.76px;
+    }
   }
 }
 
@@ -24,4 +37,51 @@
   text-transform: uppercase;
   letter-spacing: 2.12px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 157px;
+    line-height: 136px;
+    letter-spacing: 4.27px;
+  }
 }
+
+.heading-block__descr-wrapper {
+  display: none;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-left: 49%;
+    text-align: center;
+  }
+}
+
+.heading-block__descr {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    width: 17px;
+    word-wrap: break-word;
+    color: #ff9ebd;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 50px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  &--panteon {
+    @media (min-width: @tablet-width) {
+      left: 0;
+      opacity: 0.2;
+    }
+  }
+
+  &--olimp {
+    @media (min-width: @tablet-width) {
+      left: 50px;
+      opacity: 0.6;
+    }
+  }
+}
+

@@ -3,9 +3,19 @@
   min-width: 145px;
   padding-top: 36px;
 
+  @media (min-width: @tablet-width) {
+    min-width: 154px;
+    padding-top: 45px;
+  }
+
   &:not(:first-child) {
     padding-left: 15px;
     margin-right: 15px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 40px;
+      min-width: 194px;
+    }
   }
 
   &:not(:first-child)::before {
@@ -16,6 +26,10 @@
     width: 2px;
     height: 49px;
     background-color: fade(#e12457, 15);
+
+    @media (min-width: @tablet-width) {
+      top: 84px;
+    }
   }
 }
 
@@ -25,6 +39,10 @@
   font-size: @font-size-title;
   font-weight: 700;
   line-height: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 48px;
+  }
 }
 
 .features-item__text {
