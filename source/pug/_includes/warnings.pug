@@ -2,18 +2,21 @@ section.warnings
   h2.warnings__title
     | Подводные камни в&nbsp;масштабах космоса
   .warnings__img-wrapper.video-block
-    img.video-block__img(src="./img/astronaut-video-320.jpg", alt="Video about astronaut", width="290", height="172")
+    picture.video-block__img
+      source(media="(min-width: 750px)", srcset="./img/astronaut-video-750.jpg, ./img/astronaut-video-750@2x.jpg 2x")
+      img(src="./img/astronaut-video-320.jpg", srcset="./img/astronaut-video-320@2x.jpg 2x", alt="Video about astronaut")
     span.video-block__play-btn.warnings__play-btn
   ul.warnings__list
     li.warnings__item.warnings-item.warnings-item--active
       h3.warnings-item__title
         | Жить или&nbsp;выживать?
-      p.warnings-item__text
-        | Чем отличаются Земля и&nbsp;Марс? Какие условия встретят новых поселенцев?
-      p.warnings-item__text
-        | Марс холодная и&nbsp;засушливая планета, на&nbsp;которой есть своя атмосфера, на 96% состоящая из&nbsp;углекислых газов, а минимальная температура опускается до&nbsp;-140 градусов по&nbsp;Цельсию. Каждый год по&nbsp;весне на&nbsp;планете случаются пылевые бури, длящиеся от нескольких часов до&nbsp;нескольких месяцев.
-      p.warnings-item__text
-        | На&nbsp;планете отсутствует магнитное поле, поэтому радиационный фон повышен. А&nbsp;низкая гравитация при&nbsp;длитеьном пребывании на&nbsp;Марсе сделает возвращение на&nbsp;Землю невозможным. Полёт на&nbsp;Марс — билет в&nbsp;один конец с&nbsp;целью создать новую цивилизацию.
+      .warnings-item__block-text
+        p.warnings-item__text
+          | Чем отличаются Земля и&nbsp;Марс? Какие условия встретят новых поселенцев?
+        p.warnings-item__text
+          | Марс холодная и&nbsp;засушливая планета, на&nbsp;которой есть своя атмосфера, на 96% состоящая из&nbsp;углекислых газов, а минимальная температура опускается до&nbsp;-140 градусов по&nbsp;Цельсию. Каждый год по&nbsp;весне на&nbsp;планете случаются пылевые бури, длящиеся от нескольких часов до&nbsp;нескольких месяцев.
+        p.warnings-item__text
+          | На&nbsp;планете отсутствует магнитное поле, поэтому радиационный фон повышен. А&nbsp;низкая гравитация при&nbsp;длитеьном пребывании на&nbsp;Марсе сделает возвращение на&nbsp;Землю невозможным. Полёт на&nbsp;Марс — билет в&nbsp;один конец с&nbsp;целью создать новую цивилизацию.
     li.warnings__item.warnings-item
       h3.warnings-item__title
         | Готовы&nbsp;ли технологии?
