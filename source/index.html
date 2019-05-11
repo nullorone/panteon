@@ -13,12 +13,12 @@
   }
 
 /* Change min-width for your tablet device */
-  /* @media (min-width: 768px) {
-    HTML { */
+  @media (min-width: 750px) {
+    HTML {
       /* Your layout for tablet */
-      /* background-image: url( 'img/previews/tablet.png' );
+      background-image: url( 'img/previews/750.png' );
     }
-  } */
+  }
 
 /* Change min-width for your desktop size */
   /* @media (min-width: 1150px) {
@@ -41,20 +41,29 @@
         <header class="header">
           <nav class="header__nav nav">
             <div class="nav__logo-block logo-block">
-              <div class="logo-block__img-wrapper"><img class="logo-block__img" src="./img/logo.png" alt="Pantheon project logo" width="39" height="39"/></div>
+              <div class="logo-block__img-wrapper">
+                <picture class="logo-block__img">
+                  <source media="(min-width: 750px)" srcset="./img/logo-750.png, ./img/logo-750@2x.png 2x"/><img src="./img/logo.png" srcset="./img/logo@2x.png 2x" alt="Pantheon project logo"/>
+                </picture>
+              </div>
               <div class="logo-block__text">
                 <h1 class="logo-block__title">Pantheon</h1><span>project</span>
               </div>
             </div>
-            <div class="nav__menu-block"></div>
+            <div class="nav__menu-block"><span class="nav__menu-label">Меню</span></div>
           </nav>
           <div class="header__heading-block heading-block">
             <p class="heading-block__text"><span>Пункт назначения:</span>Пантеон,</p>
             <p class="heading-block__heading">марс</p>
+            <div class="heading-block__descr-wrapper"><span class="heading-block__descr heading-block__descr--panteon">Пантеон</span><span class="heading-block__descr heading-block__descr--olimp">Олимп</span></div>
           </div>
           <div class="header__video-block video-block">
-            <div class="video-block__img-wrapper"><img class="video-block__img" src="./img/header-video-320.png" alt="Preview video about Mars" width="214" height="139"/></div><a class="video-block__play-btn" href="#">Воспроизвести видео</a>
-            <p class="video-block__text">Первый город на&nbsp;планете Марс недалеко от&nbsp;горы Олимп</p>
+            <div class="video-block__img-wrapper">
+              <picture class="video-block__img">
+                <source media="(min-width: 750px)" srcset="./img/header-video-750.png, ./img/header-video-750@2x.png 2x"/><img src="./img/header-video-320.png" srcset="./img/header-video-320@2x.png 2x" alt="Preview video about Mars"/>
+              </picture><a class="video-block__play-btn" href="#">Смотреть видео</a>
+              <p class="video-block__text">Первый город на&nbsp;планете Марс недалеко от&nbsp;горы Олимп</p>
+            </div>
           </div>
           <button class="header__btn-scroll">Скролить вниз</button>
         </header>
@@ -91,12 +100,18 @@
             Марс. <br>
             Вспомнить всё
           </h2>
-          <p class="about__subtitle">Что такое Марс?</p>
-          <p class="about__text about__text--first">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
-          <p class="about__text">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
-          <p class="about__subtitle">Где это? Как туда доехать?</p>
-          <p class="about__text">Расстояние до Марса — почти 56 миллионов&nbsp;километров.</p>
-          <p class="about__text">Чтобы преодалеть такое расстояние, нужно&nbsp;лететь на межпланетоном корабле 7&nbsp;-&nbsp;8&nbsp;месяцев.</p>
+          <div class="about__descr-wrapper">
+            <div class="about__descr-col">
+              <p class="about__subtitle">Что такое Марс?</p>
+              <p class="about__text about__text--first">Планета Солнечной системы, названа в честь Марса —&nbsp;древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+              <p class="about__text">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+            </div>
+            <div class="about__descr-col">
+              <p class="about__subtitle">Где это? Как туда доехать?</p>
+              <p class="about__text">Расстояние до Марса — почти 56 миллионов&nbsp;километров.</p>
+              <p class="about__text">Чтобы преодалеть такое расстояние, нужно&nbsp;лететь на межпланетоном корабле 7&nbsp;-&nbsp;8&nbsp;месяцев.</p>
+            </div>
+          </div>
           <div class="about__info info-block">
             <div class="info-block__planet info-block__planet--earth"></div>
             <div class="info-block__planet info-block__planet--mars"></div><span class="info-block__rocket"></span>
@@ -109,29 +124,39 @@
         <section class="author">
           <h2 class="author__title">
             От идеи <br>
-            до реализации
+            &nbsp;до реализации
           </h2>
           <p class="author__subtitle">Илон Маск. Гений или безумец?</p>
           <p class="author__text">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
           <div class="author__img-wrapper"><img class="author__img" src="./img/ilon-mask-320.jpg" alt="Ilon Mask" width="165" height="189"/></div>
-          <blockquote class="author__quote">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</blockquote>
+          <blockquote class="author__quote">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на&nbsp;Марс, должен иметь такую возможность</blockquote>
           <p class="author__quote-descr"> — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
           <p class="author__text">Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
-        </section>
-        <section class="price"><img class="price__img" src="./img/rocket-320.jpg" alt="The flight of the rocket" width="289" height="289"/>
-          <h2 class="price__title">Стоимость перелёта</h2>
-          <p class="price__text">Высадка двоих астронавтов на&nbsp;Луну обошлась США в&nbsp;20&nbsp;млрд. долларов. Маск стремится сократить эту цифру в&nbsp;20&nbsp;000 раз, что составит <strong>500&nbsp;000 долларов</strong> на&nbsp;человека.</p>
-          <div class="price__block"><span class="price__value">$500&nbsp;k</span><span class="price__value-descr">и&nbsp;ты&nbsp;на&nbsp;Марсе!</span></div><a class="price__btn btn-white" href="#">Я готов лететь</a>
+          <div class="author__price price">
+            <picture class="price__img">
+              <source media="(min-width: 750px)" srcset="./img/rocket-750.jpg, ./img/rocket-750@2x.jpg 2x"/><img src="./img/rocket-320.jpg" srcset="./img/rocket-320@2x.jpg 2x" alt="The flight of the rocket"/>
+            </picture>
+            <h2 class="price__title">Стоимость перелёта</h2>
+            <p class="price__text">Высадка двоих астронавтов на&nbsp;Луну обошлась США в&nbsp;20&nbsp;млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <strong>500&nbsp;000 долларов</strong> на&nbsp;человека.</p>
+            <div class="price__block"><span class="price__value">$500&nbsp;k</span><span class="price__value-descr">и&nbsp;ты&nbsp;на&nbsp;Марсе!</span><a class="price__block-btn btn-white" href="#">Я готов лететь</a></div>
+          </div>
         </section>
         <section class="warnings">
           <h2 class="warnings__title">Подводные камни в&nbsp;масштабах космоса</h2>
-          <div class="warnings__img-wrapper video-block"><img class="video-block__img" src="./img/astronaut-video-320.jpg" alt="Video about astronaut" width="290" height="172"/><span class="video-block__play-btn warnings__play-btn"></span></div>
+          <div class="warnings__img-wrapper video-block">
+            <picture class="video-block__img">
+              <source media="(min-width: 750px)" srcset="./img/astronaut-video-750.jpg, ./img/astronaut-video-750@2x.jpg 2x"/><img src="./img/astronaut-video-320.jpg" srcset="./img/astronaut-video-320@2x.jpg 2x" alt="Video about astronaut"/>
+            </picture><span class="video-block__play-btn warnings__play-btn"></span>
+          </div>
           <ul class="warnings__list">
             <li class="warnings__item warnings-item warnings-item--active">
               <h3 class="warnings-item__title">Жить или&nbsp;выживать?</h3>
-              <p class="warnings-item__text">Чем отличаются Земля и&nbsp;Марс? Какие условия встретят новых поселенцев?</p>
-              <p class="warnings-item__text">Марс холодная и&nbsp;засушливая планета, на&nbsp;которой есть своя атмосфера, на 96% состоящая из&nbsp;углекислых газов, а минимальная температура опускается до&nbsp;-140 градусов по&nbsp;Цельсию. Каждый год по&nbsp;весне на&nbsp;планете случаются пылевые бури, длящиеся от нескольких часов до&nbsp;нескольких месяцев.</p>
-              <p class="warnings-item__text">На&nbsp;планете отсутствует магнитное поле, поэтому радиационный фон повышен. А&nbsp;низкая гравитация при&nbsp;длитеьном пребывании на&nbsp;Марсе сделает возвращение на&nbsp;Землю невозможным. Полёт на&nbsp;Марс — билет в&nbsp;один конец с&nbsp;целью создать новую цивилизацию.</p>
+              <div class="warnings-item__block-text">
+                <h4 class="warninigs-item__inner-title">Жить или&nbsp;выживать?</h4>
+                <p class="warnings-item__text">Чем отличаются Земля и&nbsp;Марс? Какие условия встретят новых поселенцев?</p>
+                <p class="warnings-item__text">Марс холодная и&nbsp;засушливая планета, на&nbsp;которой есть своя атмосфера, на 96% состоящая из&nbsp;углекислых газов, а минимальная температура опускается до&nbsp;-140 градусов по&nbsp;Цельсию. Каждый год по&nbsp;весне на&nbsp;планете случаются пылевые бури, длящиеся от нескольких часов до&nbsp;нескольких месяцев.</p>
+                <p class="warnings-item__text">На&nbsp;планете отсутствует магнитное поле, поэтому радиационный фон повышен. А&nbsp;низкая гравитация при&nbsp;длитеьном пребывании на&nbsp;Марсе сделает возвращение на&nbsp;Землю невозможным. Полёт на&nbsp;Марс — билет в&nbsp;один конец с&nbsp;целью создать новую цивилизацию.</p>
+              </div>
             </li>
             <li class="warnings__item warnings-item">
               <h3 class="warnings-item__title">Готовы&nbsp;ли технологии?</h3>
@@ -150,9 +175,14 @@
             <li class="details__item details-item details-item--active">
               <div class="details-item__heading-block"><span class="details-item__icon details-item__icon--teacup">Иконка проживания</span>
                 <h3 class="details-item__title">Проживание</h3>
-              </div><img class="details-item__img" src="./img/accommodation-320.jpg" alt="Accommodation at the station" width="260" height="125"/>
-              <p class="details-item__subtitle">Проживание</p>
-              <p class="details-item__text">В&nbsp;основе жилых помещений лежат надувные компоненты&nbsp;—&nbsp;спальня, рабочая зона, гостиная, парник для выращивания зелени —&nbsp;50&nbsp;м<sup>2</sup> на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p><a class="details-item__link" href="#">Подробнее</a>
+              </div>
+              <div class="details-item__content">
+                <picture class="details-item__img">
+                  <source media="(min-width: 750px)" srcset="./img/accommodation-750.jpg, ./img/accommodation-750@2x.jpg 2x"/><img src="./img/accommodation-320.jpg" srcset="./img/accommodation-320@2x.jpg 2x" alt="Accommodation at the station"/>
+                </picture>
+                <p class="details-item__subtitle">Проживание</p>
+                <p class="details-item__text">В&nbsp;основе жилых помещений лежат надувные компоненты&nbsp;—&nbsp;спальня, рабочая зона, гостиная, парник для выращивания зелени —&nbsp;50&nbsp;м<sup>2</sup> на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p><a class="details-item__link" href="#">Подробнее</a>
+              </div>
             </li>
             <li class="details__item details-item">
               <div class="details-item__heading-block"><span class="details-item__icon details-item__icon--helmet">Иконка шлема</span></div>
@@ -168,37 +198,42 @@
             </li>
           </ul>
         </section>
-        <section class="criteria">
-          <h2 class="criteria__title">
-            Деньги приготовил. <br>
-            Когда вылетаем?
-          </h2>
-          <p class="criteria__text">Первый «частный» полёт на&nbsp;Марс осуществит в&nbsp;2018&nbsp;году в&nbsp;беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в&nbsp;2020&nbsp;году, как минимум одна в&nbsp;2022-м и,&nbsp;вероятно, пилотируемая миссия через два года с&nbsp;достижением Марса в&nbsp;2025&nbsp;году.</p>
-          <p class="criteria__text">Для всех желающих открыты курсы подготовки.</p>
-          <p class="criteria__text">За 40-100 ближайших лет на Марс планируется доставить до&nbsp;1 млн.</p><a class="criteria__link" href="#">Критерии отбора</a>
-        </section>
-        <section class="news">
-          <h2 class="news__title">Будь в курсе новостей</h2>
-          <form class="news__form news-form" action="https://echo.htmlacademy.ru" method="POST">
-            <input class="news-form__input" type="text" id="user-name" name="user-name" placeholder="Имя"/>
-            <label class="news-form__label visually-hidden" for="user-name"></label>
-            <input class="news-form__input" type="email" id="user-email" name="user-email" placeholder="E-mail"/>
-            <label class="news-form__label visually-hidden" for="user-email"></label>
-            <button class="news-form__btn btn-white" type="submit">Подписаться</button>
-          </form>
-        </section>
       </div>
       <footer class="footer">
-        <ul class="footer__socials socials">
-          <li class="socials__item"><a class="socials__link socials__link--vk" href="#">Проект во Вконтакте</a></li>
-          <li class="socials__item"><a class="socials__link socials__link--tw" href="#">Проект в Twitter</a></li>
-          <li class="socials__item"><a class="socials__link socials__link--fb" href="#">Проект в Facebook</a></li>
-          <li class="socials__item"><a class="socials__link socials__link--youtube" href="#">Канал на Youtube</a></li>
-        </ul><a class="footer__link" href="#">Подробнее о проекте</a>
-        <div class="footer__logo-block logo-block">
-          <div class="logo-block__img-wrapper"><img class="logo-block__img" src="./img/logo-white.png" alt="Pantheon project logo" width="39" height="39"/></div>
-          <div class="logo-block__text">
-            <h1 class="logo-block__title">Pantheon</h1><span>project</span>
+        <h2 class="footer__title">
+          Деньги приготовил. <br>
+          Когда вылетаем?
+        </h2>
+        <div class="footer__block-content">
+          <div class="footer__criteria criteria">
+            <p class="criteria__text">Первый «частный» полёт на&nbsp;Марс осуществит в&nbsp;2018&nbsp;году в&nbsp;беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в&nbsp;2020&nbsp;году, как минимум одна в 2022&nbsp;-&nbsp;м&nbsp;и, вероятно, пилотируемая миссия через два года с&nbsp;достижением Марса в 2025 году.</p>
+            <p class="criteria__text">Для всех желающих открыты курсы подготовки.</p>
+            <p class="criteria__text">За 40-100 ближайших лет на Марс планируется&nbsp;доставить до 1 млн.</p><a class="criteria__link" href="#">Критерии отбора</a>
+          </div>
+          <div class="footer__news news">
+            <form class="news__form news-form" action="https://echo.htmlacademy.ru" method="POST">
+              <h2 class="news-form__title">Будь в курсе новостей</h2>
+              <input class="news-form__input" type="text" id="user-name" name="user-name" placeholder="Имя"/>
+              <label class="news-form__label visually-hidden" for="user-name"></label>
+              <input class="news-form__input" type="email" id="user-email" name="user-email" placeholder="E-mail"/>
+              <label class="news-form__label visually-hidden" for="user-email"></label>
+              <button class="news-form__btn btn-white" type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__block-bottom">
+          <p class="footer__socials-label">Следуйте за нами</p>
+          <ul class="footer__socials socials">
+            <li class="socials__item"><a class="socials__link socials__link--vk" href="#">Проект во Вконтакте</a></li>
+            <li class="socials__item"><a class="socials__link socials__link--tw" href="#">Проект в Twitter</a></li>
+            <li class="socials__item"><a class="socials__link socials__link--fb" href="#">Проект в Facebook</a></li>
+            <li class="socials__item"><a class="socials__link socials__link--youtube" href="#">Канал на Youtube</a></li>
+          </ul><a class="footer__link" href="#">Подробнее о проекте</a>
+          <div class="footer__logo-block logo-block">
+            <div class="footer__logo-wrapper logo-block__img-wrapper"><img class="logo-block__img" src="./img/logo-white.png" alt="Pantheon project logo"/></div>
+            <div class="footer__logo-text logo-block__text">
+              <h1 class="logo-block__title">Pantheon</h1><span>project</span>
+            </div>
           </div>
         </div>
       </footer>
