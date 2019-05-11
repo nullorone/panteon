@@ -8,6 +8,68 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 74px;
+    padding-bottom: 47px;
+    background-image: url("../img/bg-footer-750.jpg");
+  }
+}
+
+.footer__title {
+  .titleSection();
+  font-size: 35px;
+  color: @color-white;
+  line-height: 42px;
+
+  @media (min-width: @tablet-width) {
+    line-height: 57px;
+  }
+}
+
+.footer__block-content {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 60px;
+  }
+}
+
+.footer__criteria {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.footer__news {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
+.footer__block-bottom {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 88px;
+  }
+}
+
+.footer__socials-label {
+  display: none;
+  margin: 0;
+  color: @color-white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 3;
+    margin-top: 8px;
+    margin-left: 62px;
+  }
 }
 
 .footer__link {
@@ -20,14 +82,42 @@
   text-align: center;
   letter-spacing: 0.35px;
 
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-top: 8px;
+    margin-left: 51px;
+  }
+
   &:hover {
     color: @color-white;
+  }
+}
+
+.footer__logo-wrapper {
+  width: 39px;
+  height: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.footer__logo-text {
+  @media (min-width: @tablet-width) {
+    margin-left: 10px;
   }
 }
 
 .footer__logo-block {
   margin-top: 38px;
   margin-left: 76px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 0;
+    order: 1;
+  }
 
   & .logo-block__text {
     color: @color-white;
@@ -44,5 +134,12 @@
       font-weight: 100;
       line-height: 14px;
     }
+  }
+}
+
+.footer__socials {
+  @media (min-width: @tablet-width) {
+    margin-left: 10px;
+    order: 4;
   }
 }

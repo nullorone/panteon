@@ -2,17 +2,12 @@
   .sideOffset();
   padding-top: 42px;
   padding-bottom: 45px;
-  background-image: url("../img/bg-about-320.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 
-.criteria__title {
-  .titleSection();
-  font-size: 35px;
-  color: @color-white;
-  line-height: 42px;
+  @media (min-width: @tablet-width) {
+    max-width: 360px;
+    padding: 0;
+    padding-left: 15px;
+  }
 }
 
 .criteria__text {
@@ -25,6 +20,10 @@
 
   &:first-of-type {
     margin-top: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: -5px;
+    }
   }
 }
 
@@ -35,4 +34,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 42px;
+  }
 }
