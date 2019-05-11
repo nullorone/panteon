@@ -8,6 +8,12 @@
 
 .socials__item {
   margin-right: 10px;
+
+  &:last-child {
+    @media (min-width: @tablet-width) {
+      margin-right: 0;
+    }
+  }
 }
 
 .socials__link {

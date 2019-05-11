@@ -6,6 +6,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 68px;
+    padding-bottom: 209px;
+    background-image: url("../img/bg-space-750.jpg");
+  }
 }
 
 .warnings__title {
@@ -13,11 +19,26 @@
   color: @color-white;
   max-width: 210px;
   line-height: 43px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 500px;
+    line-height: 56px;
+  }
 }
 
 .warnings__img-wrapper {
   margin-top: 44px;
   width: 290px;
+
+  @media (min-width: @tablet-width) {
+    width: 718px;
+    margin-top: 42px;
+
+    .video-block__img img {
+      width: 718px;
+      height: 361px;
+    }
+  }
 }
 
 .warnings__list {
