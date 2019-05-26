@@ -1,7 +1,6 @@
 .author {
   padding-top: 91px;
   padding-bottom: 193px;
-  .sideOffset();
   background-color: fade(#020003, 20);
 
   @media (min-width: @tablet-width) {
@@ -9,6 +8,11 @@
     padding-bottom: 87px;
     background-color: transparent;
     background-image: url("../img/bg-author-750.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 29px;
+    padding-bottom: 165px;
   }
 }
 
@@ -30,6 +34,10 @@
   @media (min-width: @tablet-width) {
     margin-top: 51px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 54px;
+  }
 }
 
 .author__text {
@@ -49,10 +57,18 @@
       margin-top: 24px;
       max-width: 490px;
     }
+
+    @media (min-width: @desktop-width) {
+      max-width: 695px;
+    }
   }
 
   &:last-child {
     margin-top: 13px;
+    
+    @media (min-width: @desktop-width) {
+      max-width: 600px;
+    }
   }
 }
 
@@ -70,12 +86,27 @@
     margin-left: 40px;
     margin-bottom: 50px;
   }
+  
+  @media (min-width: @desktop-width) {
+    width: 325px;
+    height: 373px;
+    margin-top: -149px;
+  }
 }
 
-.author__img {
+.author__img img {
   position: absolute;
   top: 21px;
   left: -45px;
+  width: 165px;
+  height: 189px;
+  
+  @media (min-width: @desktop-width) {
+    top: 37px;
+    left: -61px;
+    width: 325px;
+    height: 373px;
+  }
 }
 
 .author__quote {
@@ -89,6 +120,11 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 34px;
+    max-width: 700px;
   }
 
   &::before {
@@ -113,6 +149,11 @@
   @media (min-width: @tablet-width) {
     margin-top: 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 38px;
+    max-width: 700px;
+  }
 }
 
 .author__price {
@@ -123,5 +164,9 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 89px;
   }
 }

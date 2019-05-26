@@ -1,36 +1,38 @@
 section.details
-  h2.details__title
-    | Организация жизни в колонии
-  ul.details__list
-    li.details__item.details-item.details-item--active
-      .details-item__heading-block
-        span.details-item__icon.details-item__icon--teacup
-          | Иконка проживания
-        h3.details-item__title
-          | Проживание
-      .details-item__content
-        picture.details-item__img
-          source(media="(min-width: 750px)", srcset="./img/accommodation-750.jpg, ./img/accommodation-750@2x.jpg 2x")
-          img(src="./img/accommodation-320.jpg", srcset="./img/accommodation-320@2x.jpg 2x", alt="Accommodation at the station")
-        p.details-item__subtitle
-          | Проживание
-        p.details-item__text
-          | В&nbsp;основе жилых помещений лежат надувные компоненты&nbsp;—&nbsp;спальня, рабочая зона, гостиная, парник для выращивания зелени —&nbsp;50&nbsp;м<sup>2</sup> на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.
-        a.details-item__link(href="#")
-          | Подробнее
-    li.details__item.details-item
-      .details-item__heading-block
-        span.details-item__icon.details-item__icon--helmet
-          | Иконка шлема
-    li.details__item.details-item
-      .details-item__heading-block
-        span.details-item__icon.details-item__icon--microscope
-          | Иконка микроскопа
-    li.details__item.details-item
-      .details-item__heading-block
-        span.details-item__icon.details-item__icon--camera
-          | Иконка камеры
-    li.details__item.details-item
-      .details-item__heading-block
-        span.details-item__icon.details-item__icon--flower
-          | Иконка цветка
+  .container
+    h2.details__title
+      | Организация жизни в колонии
+    ul.details__list
+      li.details__item.details-item.details-item--active
+        .details-item__heading-block
+          span.details-item__icon.details-item__icon--teacup
+            | Иконка проживания
+          h3.details-item__title
+            | Проживание
+        .details-item__content
+          picture.details-item__img
+            source(media="(min-width: 1170px)", srcset="./img/accommodation-1170.jpg, ./img/accommodation-1170@2x.jpg 2x")
+            source(media="(min-width: 750px)", srcset="./img/accommodation-750.jpg, ./img/accommodation-750@2x.jpg 2x")
+            img(src="./img/accommodation-320.jpg", srcset="./img/accommodation-320@2x.jpg 2x", alt="Accommodation at the station")
+          p.details-item__subtitle
+            | Проживание
+          p.details-item__text
+            | В&nbsp;основе жилых помещений лежат надувные компоненты&nbsp;—&nbsp;спальня, рабочая зона, гостиная, парник для выращивания зелени —&nbsp;50&nbsp;м<sup>2</sup> на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.
+          a.details-item__link(href="#")
+            | Подробнее
+      li.details__item.details-item
+        .details-item__heading-block
+          span.details-item__icon.details-item__icon--helmet
+            | Иконка шлема
+      li.details__item.details-item
+        .details-item__heading-block
+          span.details-item__icon.details-item__icon--microscope
+            | Иконка микроскопа
+      li.details__item.details-item
+        .details-item__heading-block
+          span.details-item__icon.details-item__icon--camera
+            | Иконка камеры
+      li.details__item.details-item
+        .details-item__heading-block
+          span.details-item__icon.details-item__icon--flower
+            | Иконка цветка

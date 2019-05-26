@@ -1,9 +1,13 @@
 .about {
   padding-top: 43px;
-  .sideOffset();
 
   @media (min-width: @tablet-width) {
     padding-top: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 90px;
+    overflow-x: hidden;
   }
 }
 
@@ -11,6 +15,11 @@
   @media (min-width: @tablet-width) {
     display: flex;
     padding-top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1020px;
+    padding-top: 55px;
   }
 }
 
@@ -79,6 +88,12 @@
     }
   }
 
+  &--last-right {
+    @media (min-width: @desktop-width) {
+      max-width: 360px;
+    }
+  }
+
   &:nth-of-type(5) {
     margin-top: 18px;
   }
@@ -88,6 +103,10 @@
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 20px;
     }
   }
 }

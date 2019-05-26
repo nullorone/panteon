@@ -13,6 +13,10 @@
     @media (min-width: @tablet-width) {
       margin-top: 54px;
     }
+    
+    @media (min-width: @desktop-width) {
+      margin-top: 67px;
+    }
   }
 
   &::before {
@@ -41,6 +45,10 @@
 
     .warnings-item__title {
       color: @color-white;
+
+      @media (min-width: @desktop-width) {
+        letter-spacing: 1.75px;
+      }
     }
 
     .warninigs-item__inner-title {
@@ -81,6 +89,10 @@
     width: 460px;
     padding-left: 37px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 895px;
+  }
 }
 
 .warnings-item__text {
@@ -91,6 +103,10 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    max-width: 770px;
+  }
 
   &:first-of-type {
     margin-top: 32px;
