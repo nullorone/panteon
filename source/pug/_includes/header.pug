@@ -1,38 +1,39 @@
 header.header
-  nav.header__nav.nav
-    .nav__logo-block.logo-block
-      .logo-block__img-wrapper
-        picture.logo-block__img
-          source(media="(min-width: 750px)", srcset="./img/logo-750.png, ./img/logo-750@2x.png 2x")
-          img(src="./img/logo.png", srcset="./img/logo@2x.png 2x", alt="Pantheon project logo")
-      .logo-block__text
-        h1.logo-block__title
-          | Pantheon
+  .container
+    nav.header__nav.nav
+      .nav__logo-block.logo-block
+        .logo-block__img-wrapper
+          picture.logo-block__img
+            source(media="(min-width: 750px)", srcset="./img/logo-750.png, ./img/logo-750@2x.png 2x")
+            img(src="./img/logo.png", srcset="./img/logo@2x.png 2x", alt="Pantheon project logo")
+        .logo-block__text
+          h1.logo-block__title
+            | Pantheon
+          span
+            | project
+      .nav__menu-block
+        span.nav__menu-label
+          | Меню
+    .header__heading-block.heading-block
+      p.heading-block__text
         span
-          | project
-    .nav__menu-block
-      span.nav__menu-label
-        | Меню
-  .header__heading-block.heading-block
-    p.heading-block__text
-      span
-        | Пункт назначения:
-      | Пантеон,
-    p.heading-block__heading
-      | марс
-    .heading-block__descr-wrapper
-      span.heading-block__descr.heading-block__descr--panteon
-        | Пантеон
-      span.heading-block__descr.heading-block__descr--olimp
-        | Олимп
-  .header__video-block.video-block
-    .video-block__img-wrapper
-      picture.video-block__img
-        source(media="(min-width: 750px)", srcset="./img/header-video-750.png, ./img/header-video-750@2x.png 2x")
-        img(src="./img/header-video-320.png", srcset="./img/header-video-320@2x.png 2x" alt="Preview video about Mars")
-      a.video-block__play-btn(href="#")
-        | Смотреть видео
-      p.video-block__text
-        | Первый город на&nbsp;планете Марс недалеко от&nbsp;горы Олимп
-  button.header__btn-scroll
-    | Скролить вниз
+          | Пункт назначения:
+        | Пантеон,
+      p.heading-block__heading
+        | марс
+      .heading-block__descr-wrapper
+        span.heading-block__descr.heading-block__descr--panteon
+          | Пантеон
+        span.heading-block__descr.heading-block__descr--olimp
+          | Олимп
+    .header__video-block.video-block
+      .video-block__img-wrapper
+        picture.video-block__img
+          source(media="(min-width: 750px)", srcset="./img/header-video-750.png, ./img/header-video-750@2x.png 2x")
+          img(src="./img/header-video-320.png", srcset="./img/header-video-320@2x.png 2x" alt="Preview video about Mars")
+        a.video-block__play-btn(href="#")
+          | Смотреть видео
+        p.video-block__text
+          | Первый город на&nbsp;планете Марс недалеко от&nbsp;горы Олимп
+    button.header__btn-scroll
+      | Скролить вниз
