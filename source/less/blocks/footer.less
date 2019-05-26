@@ -1,7 +1,6 @@
 .footer {
   min-width: @mobile-width;
   width: 100%;
-  .sideOffset();
   padding-top: 50px;
   padding-bottom: 20px;
   background-image: url("../img/bg-footer-320.jpg");
@@ -14,6 +13,10 @@
     padding-bottom: 47px;
     background-image: url("../img/bg-footer-750.jpg");
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 118px;
+  }
 }
 
 .footer__title {
@@ -25,6 +28,12 @@
   @media (min-width: @tablet-width) {
     line-height: 57px;
   }
+
+  & > br {
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .footer__block-content {
@@ -32,11 +41,20 @@
     display: flex;
     margin-top: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+  }
 }
 
 .footer__criteria {
   @media (min-width: @tablet-width) {
     order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 32px;
+    padding-top: 7px;
   }
 }
 
@@ -52,6 +70,10 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 88px;
+  }
+  
+  @media (min-width: @desktop-width) {
+    margin-top: 110px;
   }
 }
 
@@ -70,6 +92,10 @@
     margin-top: 8px;
     margin-left: 62px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 238px;
+  }
 }
 
 .footer__link {
@@ -86,6 +112,10 @@
     order: 2;
     margin-top: 8px;
     margin-left: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 253px;
   }
 
   &:hover {
@@ -107,6 +137,10 @@
   @media (min-width: @tablet-width) {
     margin-left: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 16px;
+  }
 }
 
 .footer__logo-block {
@@ -119,6 +153,11 @@
     order: 1;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
+
   & .logo-block__text {
     color: @color-white;
 
@@ -127,12 +166,20 @@
       font-weight: 600;
       line-height: 14px;
       letter-spacing: 0.6px;
+
+      @media (min-width: @desktop-width) {
+        font-size: 17px;
+      }
     }
 
     & > span {
       font-size: 10px;
       font-weight: 100;
       line-height: 14px;
+
+      @media (min-width: @desktop-width) {
+        font-size: 13px;
+      }
     }
   }
 }

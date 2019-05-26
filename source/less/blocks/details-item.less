@@ -11,6 +11,12 @@
     background-image: linear-gradient(to bottom, transparent 0%, transparent 8px, #e12457 8px, #e12457 10px, transparent 10px, transparent 100%);
   }
 
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding-left: 43px;
+    background-image: linear-gradient(to right, transparent 0%, transparent 8px, #e12457 8px, #e12457 10px, transparent 10px, transparent 100%);
+  }
+
   &:last-child {
     @media (min-width: @tablet-width) {
       width: 48px;
@@ -33,6 +39,41 @@
     }
   }
 
+  &:not(.details-item--active) {
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      top: 236px;
+      left: 0;
+      margin-top: 100px;
+      padding-top: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: @desktop-width) {
+      top: 350px;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: @desktop-width) {
+      top: 467px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: @desktop-width) {
+      top: initial;
+      bottom: 0;
+    }
+
+    &::before {
+      @media (min-width: @desktop-width) {
+        top: 13px;
+      }
+    }
+  }
+
   &--active {
     margin-top: 30px;
     padding-top: 0;
@@ -44,6 +85,13 @@
       padding-top: 38px;
       padding-left: 0;
       padding-bottom: 605px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+      margin-top: 16px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     &::before {
@@ -60,6 +108,10 @@
         font-size: 20px;
         line-height: 24px;
       }
+      
+      @media (min-width: @desktop-width) {
+        transform: translate(291px, -243px) rotate(-90deg);
+      }
     }
 
     .details-item__content {
@@ -67,6 +119,10 @@
         position: absolute;
         top: 80px;
         left: 0;
+      }
+
+      @media (min-width: @desktop-width) {
+        position: static;
       }
     }
 
@@ -79,6 +135,12 @@
         width: 719px;
         height: 334px;
       }
+      
+      @media (min-width: @desktop-width) {
+        width: 985px;
+        height: 457px;
+        margin-top: -6px;
+      }
     }
 
     .details-item__subtitle {
@@ -86,6 +148,10 @@
 
       @media (min-width: @tablet-width) {
         margin-top: 33px;
+      }
+
+      @media (min-width: @desktop-width) {
+        margin-top: 37px;
       }
     }
 
@@ -95,12 +161,21 @@
 
     .details-item__link {
       display: inline-block;
+
+      @media (min-width: @desktop-width) {
+        margin-top: 37px;
+      }
     }
+
   }
 }
 
 .details-item__heading-block {
   display: flex;
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+  }
 }
 
 .details-item__icon {
@@ -114,6 +189,10 @@
     width: 30px;
     height: 23px;
     background-image: url("../img/icon-teacup.png");
+    
+    @media (min-width: @desktop-width) {
+      transform: translate(49px);
+    }
   }
 
   &--helmet {

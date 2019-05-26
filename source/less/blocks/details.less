@@ -1,5 +1,4 @@
 .details {
-  .sideOffset();
   padding-top: 50px;
   padding-bottom: 70px;
   background-color: fade(#020003, 20);
@@ -7,6 +6,11 @@
   @media (min-width: @tablet-width) {
     padding-top: 59px;
     background-image: url("../img/bg-author-750.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 111px;
+    padding-bottom: 147px;
   }
 }
 
@@ -25,5 +29,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
     margin-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    flex-direction: column;
   }
 }

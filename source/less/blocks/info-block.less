@@ -16,6 +16,12 @@
     background-image: url("../img/bg-author-750.png");
   }
 
+  @media (min-width: @desktop-width) {
+    min-height: 350px;
+    top: -100px;
+    overflow: initial;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -34,6 +40,11 @@
       bottom: 55px;
       left: -1264px;
       transform: skew(-10deg);
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -825px;
+      bottom: 45px;
     }
   }
 }
@@ -55,6 +66,11 @@
       height: 147px;
       bottom: 17px;
       left: 113px;
+    }
+    
+    @media (min-width: @desktop-width) {
+      bottom: 2px;
+      left: 531px;
     }
 
     &::before {
@@ -86,6 +102,10 @@
       height: 83px;
       top: 5px;
       right: 16px;
+    }
+    
+    @media (min-width: @desktop-width) {
+      top: 52px;
     }
 
     &::before {
@@ -122,6 +142,11 @@
     bottom: 130px;
     left: 420px;
   }
+  
+  @media (min-width: @desktop-width) {
+    bottom: 114px;
+    left: 838px;
+  }
 }
 
 .info-block__text-wrapper {
@@ -133,6 +158,11 @@
   @media (min-width: @tablet-width) {
     bottom: 95px;
     right: 154px;
+  }
+  
+  @media (min-width: @desktop-width) {
+    bottom: 80px;
+    right: 155px;
   }
 }
 

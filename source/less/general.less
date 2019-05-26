@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   min-width: @mobile-width;
   font-family: @font-proximanova;
   font-size: @font-size-text;
@@ -26,8 +26,19 @@ body {
   height: 100vh;
 }
 
-.wrapper-content {
+.wrapper__content {
   flex-grow: 1;
+  width: 100%;
+}
+
+.container {
+  .sideOffset();
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1170px;
+  }
 }
 
 .visually-hidden {
