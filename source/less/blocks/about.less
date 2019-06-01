@@ -39,6 +39,29 @@
       padding-left: 15px;
     }
   }
+
+
+  &--second-col {
+    & .about__subtitle {
+      margin-top: 42px;
+
+      @media (min-width: @tablet-width) {
+        margin-top: 0;
+      }
+    }
+
+    & .about__text {
+      margin-top: 19px;
+
+      &:last-of-type {
+        margin-top: 24px;
+
+        @media (min-width: @tablet-width) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 }
 
 .about__title {
@@ -54,7 +77,7 @@
 
 .about__subtitle {
   .subtitleSection();
-  margin-top: 41px;
+  margin-top: 24px;
   letter-spacing: 0.5px;
 
   @media (min-width: @tablet-width) {
@@ -99,7 +122,7 @@
   }
 
   &:last-of-type {
-    margin-top: 24px;
+    margin-top: 12px;
 
     @media (min-width: @tablet-width) {
       margin-top: 0;
