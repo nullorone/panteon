@@ -21,7 +21,7 @@
 .warnings__title {
   .titleSection();
   color: @color-white;
-  max-width: 210px;
+  max-width: calc((210 / 230) * 100%);
   line-height: 43px;
 
   @media (min-width: @tablet-width) {
@@ -45,12 +45,14 @@
   }
   
   @media (min-width: @desktop-width) {
-    width: 1139px;
+    width: 1115px;
     margin-top: 61px;
     margin-left: auto;
   }
   
   .video-block__img img {
+    width: 289px;
+
     @media (min-width: @tablet-width) {
       width: 718px;
       height: 361px;
@@ -58,7 +60,7 @@
 
     @media (min-width: @desktop-width) {
       width: 100%;
-      height: auto;
+      height: 573px;
     }
   }
 }
